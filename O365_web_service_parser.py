@@ -387,7 +387,7 @@ def WebServiceParser():
                         url = url.replace('*','')
 
                         # if the URL hasn't already been appended, then append it
-                        if url not in URL_List:
+                        if url not in URL_default_list:
                             URL_default_list.append(url)
 
 
@@ -407,7 +407,7 @@ def WebServiceParser():
                     for ip in item['ips']:
 
                         # if the IP hasn't already been appended, then append it
-                        if ip not in IP_List:
+                        if ip not in IP_default_list:
                             IP_default_list.append(ip)
 
         # Reset the fetched Network Group object to clear the 'literals'
